@@ -11,7 +11,7 @@ interface Options {
 
 @Schema({ timestamps: true })
 export class Sentence {
-  @Prop({ required: true })
+  @Prop({ required: true, unique: true })
   sentence: string;
 
   @Prop({ required: true })

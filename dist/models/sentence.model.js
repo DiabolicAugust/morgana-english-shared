@@ -15,7 +15,7 @@ let Sentence = class Sentence {
 };
 exports.Sentence = Sentence;
 __decorate([
-    (0, mongoose_1.Prop)({ required: true }),
+    (0, mongoose_1.Prop)({ required: true, unique: true }),
     __metadata("design:type", String)
 ], Sentence.prototype, "sentence", void 0);
 __decorate([
