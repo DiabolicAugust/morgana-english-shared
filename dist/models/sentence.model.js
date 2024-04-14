@@ -23,7 +23,7 @@ __decorate([
     __metadata("design:type", String)
 ], Sentence.prototype, "answer", void 0);
 __decorate([
-    (0, mongoose_1.Prop)({ required: true }),
+    (0, mongoose_1.Prop)({ required: true, type: Map, of: String }),
     __metadata("design:type", Object)
 ], Sentence.prototype, "options", void 0);
 __decorate([

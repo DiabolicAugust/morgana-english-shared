@@ -16,7 +16,7 @@ export class Sentence {
   @Prop({ required: true })
   answer: string;
 
-  @Prop({ required: true })
+  @Prop({ required: true, type: Map, of: String })
   options: Options;
 
   @Prop({ default: false })
