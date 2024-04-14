@@ -5,12 +5,16 @@ export type DayWordDocument = HydratedDocument<DayWord>;
 
 @Schema({ timestamps: true })
 export class DayWord {
+  @Prop()
   wordOfDay: string;
 
+  @Prop()
   translation: string;
 
+  @Prop()
   history: string;
 
+  @Prop()
   fact: string;
 
   @Prop({ default: false })
