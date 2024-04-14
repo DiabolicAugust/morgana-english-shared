@@ -15,6 +15,22 @@ let DayWord = class DayWord {
 };
 exports.DayWord = DayWord;
 __decorate([
+    (0, mongoose_1.Prop)(),
+    __metadata("design:type", String)
+], DayWord.prototype, "wordOfDay", void 0);
+__decorate([
+    (0, mongoose_1.Prop)(),
+    __metadata("design:type", String)
+], DayWord.prototype, "translation", void 0);
+__decorate([
+    (0, mongoose_1.Prop)(),
+    __metadata("design:type", String)
+], DayWord.prototype, "history", void 0);
+__decorate([
+    (0, mongoose_1.Prop)(),
+    __metadata("design:type", String)
+], DayWord.prototype, "fact", void 0);
+__decorate([
     (0, mongoose_1.Prop)({ default: false }),
     __metadata("design:type", Boolean)
 ], DayWord.prototype, "used", void 0);
