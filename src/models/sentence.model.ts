@@ -1,4 +1,4 @@
-import { Prop, SchemaFactory } from "@nestjs/mongoose";
+import { Prop, Schema, SchemaFactory } from "@nestjs/mongoose";
 import { HydratedDocument } from "mongoose";
 
 export type SentenceDocument = HydratedDocument<Sentence>;
@@ -9,6 +9,7 @@ interface Options {
   c: string;
 }
 
+@Schema({ timestamps: true })
 export class Sentence {
   @Prop({ required: true })
   sentence: string;

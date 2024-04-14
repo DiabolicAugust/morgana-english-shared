@@ -11,8 +11,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.SentenceSchema = exports.Sentence = void 0;
 const mongoose_1 = require("@nestjs/mongoose");
-class Sentence {
-}
+let Sentence = class Sentence {
+};
 exports.Sentence = Sentence;
 __decorate([
     (0, mongoose_1.Prop)({ required: true }),
@@ -30,5 +30,8 @@ __decorate([
     (0, mongoose_1.Prop)({ default: false }),
     __metadata("design:type", Boolean)
 ], Sentence.prototype, "used", void 0);
+exports.Sentence = Sentence = __decorate([
+    (0, mongoose_1.Schema)({ timestamps: true })
+], Sentence);
 exports.SentenceSchema = mongoose_1.SchemaFactory.createForClass(Sentence);
 //# sourceMappingURL=sentence.model.js.map
