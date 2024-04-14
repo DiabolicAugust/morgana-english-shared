@@ -30,6 +30,10 @@ __decorate([
     (0, mongoose_1.Prop)({ default: false }),
     __metadata("design:type", Boolean)
 ], Sentence.prototype, "used", void 0);
+__decorate([
+    (0, mongoose_1.Prop)({ required: true }),
+    __metadata("design:type", String)
+], Sentence.prototype, "explanation", void 0);
 exports.Sentence = Sentence = __decorate([
     (0, mongoose_1.Schema)({ timestamps: true })
 ], Sentence);

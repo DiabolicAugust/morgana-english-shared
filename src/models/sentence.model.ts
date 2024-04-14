@@ -23,6 +23,9 @@ export class Sentence {
   @Prop({ default: false })
   used: boolean;
 
+  @Prop({ required: true })
+  explanation: string;
+
   id: string;
   createdAt: string;
   updatedAt: string;

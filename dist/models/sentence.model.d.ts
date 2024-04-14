@@ -34,6 +34,7 @@ export declare class Sentence {
     answer: string;
     options: Options;
     used: boolean;
+    explanation: string;
     id: string;
     createdAt: string;
     updatedAt: string;
