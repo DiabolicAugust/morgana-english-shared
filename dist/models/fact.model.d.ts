@@ -27,7 +27,6 @@ export type FactDocument = HydratedDocument<Fact>;
 export declare class Fact {
     fact: string;
     translation: string;
-    image: string;
     used: boolean;
     id: string;
     createdAt: string;

@@ -23,10 +23,6 @@ __decorate([
     __metadata("design:type", String)
 ], Fact.prototype, "translation", void 0);
 __decorate([
-    (0, mongoose_1.Prop)({ required: true }),
-    __metadata("design:type", String)
-], Fact.prototype, "image", void 0);
-__decorate([
     (0, mongoose_1.Prop)({ default: false }),
     __metadata("design:type", Boolean)
 ], Fact.prototype, "used", void 0);
