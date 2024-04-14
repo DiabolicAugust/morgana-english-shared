@@ -11,9 +11,6 @@ export class Fact {
   @Prop({ required: true })
   translation: string;
 
-  @Prop({ required: true })
-  image: string;
-
   @Prop({ default: false })
   used: boolean;
 
