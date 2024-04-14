@@ -5,7 +5,7 @@ export type FactDocument = HydratedDocument<Fact>;
 
 @Schema({ timestamps: true })
 export class Fact {
-  @Prop({ required: true })
+  @Prop({ required: true, unique: true })
   fact: string;
 
   @Prop({ required: true })

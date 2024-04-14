@@ -15,7 +15,7 @@ let Fact = class Fact {
 };
 exports.Fact = Fact;
 __decorate([
-    (0, mongoose_1.Prop)({ required: true }),
+    (0, mongoose_1.Prop)({ required: true, unique: true }),
     __metadata("design:type", String)
 ], Fact.prototype, "fact", void 0);
 __decorate([
