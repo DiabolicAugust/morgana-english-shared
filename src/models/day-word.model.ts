@@ -5,7 +5,7 @@ export type DayWordDocument = HydratedDocument<DayWord>;
 
 @Schema({ timestamps: true })
 export class DayWord {
-  @Prop()
+  @Prop({ unique: true })
   wordOfDay: string;
 
   @Prop()
