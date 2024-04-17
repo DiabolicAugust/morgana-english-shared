@@ -22,7 +22,7 @@ __decorate([
 __decorate([
     (0, mongoose_1.Prop)({ required: true }),
     __metadata("design:type", String)
-], TopicSet.prototype, "translation", void 0);
+], TopicSet.prototype, "topicTranslation", void 0);
 __decorate([
     (0, mongoose_1.Prop)({ required: true }),
     __metadata("design:type", String)
@@ -30,7 +30,7 @@ __decorate([
 __decorate([
     (0, mongoose_1.Prop)({ required: true }),
     __metadata("design:type", String)
-], TopicSet.prototype, "sentence_translation", void 0);
+], TopicSet.prototype, "sentenceTranslation", void 0);
 __decorate([
     (0, mongoose_1.Prop)({ type: [word_model_js_1.WordSchema], default: [] }),
     __metadata("design:type", Array)

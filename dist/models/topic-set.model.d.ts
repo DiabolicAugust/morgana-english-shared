@@ -27,9 +27,9 @@ import { HydratedDocument } from "mongoose";
 export type TopicSetDocument = HydratedDocument<TopicSet>;
 export declare class TopicSet {
     topic: string;
-    translation: string;
+    topicTranslation: string;
     sentence: string;
-    sentence_translation: string;
+    sentenceTranslation: string;
     words: Word[];
 }
 export declare const TopicSetSchema: import("mongoose").Schema<TopicSet, import("mongoose").Model<TopicSet, any, any, any, import("mongoose").Document<unknown, any, TopicSet> & TopicSet & {

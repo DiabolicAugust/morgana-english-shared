@@ -10,13 +10,13 @@ export class TopicSet {
   topic: string;
 
   @Prop({ required: true })
-  translation: string;
+  topicTranslation: string;
 
   @Prop({ required: true })
   sentence: string;
 
   @Prop({ required: true })
-  sentence_translation: string;
+  sentenceTranslation: string;
 
   @Prop({ type: [WordSchema], default: [] })
   words: Word[];
