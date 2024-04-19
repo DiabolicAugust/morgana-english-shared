@@ -1,6 +1,6 @@
 import { Prop, Schema, SchemaFactory } from "@nestjs/mongoose";
 import { Word, WordSchema } from "./word.model.js";
-import { HydratedDocument, Schema as MSchema } from "mongoose";
+import { HydratedDocument } from "mongoose";
 
 export type TopicSetDocument = HydratedDocument<TopicSet>;
 
@@ -18,7 +18,7 @@ export class TopicSet {
   @Prop({ required: true })
   sentenceTranslation: string;
 
-  @Prop({ type: [MSchema.Types.ObjectId], default: [] })
+  @Prop({ type: [WordSchema], default: [] })
   words: Word[];
 }
 

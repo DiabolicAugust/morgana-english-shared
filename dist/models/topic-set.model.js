@@ -11,7 +11,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.TopicSetSchema = exports.TopicSet = void 0;
 const mongoose_1 = require("@nestjs/mongoose");
-const mongoose_2 = require("mongoose");
+const word_model_js_1 = require("./word.model.js");
 let TopicSet = class TopicSet {
 };
 exports.TopicSet = TopicSet;
@@ -32,7 +32,7 @@ __decorate([
     __metadata("design:type", String)
 ], TopicSet.prototype, "sentenceTranslation", void 0);
 __decorate([
-    (0, mongoose_1.Prop)({ type: [mongoose_2.Schema.Types.ObjectId], default: [] }),
+    (0, mongoose_1.Prop)({ type: [word_model_js_1.WordSchema], default: [] }),
     __metadata("design:type", Array)
 ], TopicSet.prototype, "words", void 0);
 exports.TopicSet = TopicSet = __decorate([
