@@ -18,6 +18,9 @@ export class TopicSet {
   @Prop({ required: true })
   sentenceTranslation: string;
 
+  @Prop({ default: false })
+  used: boolean;
+
   @Prop({ type: [WordSchema], default: [] })
   words: Word[];
 }

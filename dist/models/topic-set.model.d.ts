@@ -30,6 +30,7 @@ export declare class TopicSet {
     topicTranslation: string;
     sentence: string;
     sentenceTranslation: string;
+    used: boolean;
     words: Word[];
 }
 export declare const TopicSetSchema: import("mongoose").Schema<TopicSet, import("mongoose").Model<TopicSet, any, any, any, import("mongoose").Document<unknown, any, TopicSet> & TopicSet & {

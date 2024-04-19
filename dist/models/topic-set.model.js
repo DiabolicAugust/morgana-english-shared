@@ -32,6 +32,10 @@ __decorate([
     __metadata("design:type", String)
 ], TopicSet.prototype, "sentenceTranslation", void 0);
 __decorate([
+    (0, mongoose_1.Prop)({ default: false }),
+    __metadata("design:type", Boolean)
+], TopicSet.prototype, "used", void 0);
+__decorate([
     (0, mongoose_1.Prop)({ type: [word_model_js_1.WordSchema], default: [] }),
     __metadata("design:type", Array)
 ], TopicSet.prototype, "words", void 0);
