@@ -23,7 +23,7 @@
 /// <reference types="mongoose/types/virtuals.js" />
 /// <reference types="mongoose/types/inferschematype.js" />
 import { Word } from "./word.model.js";
-import { HydratedDocument } from "mongoose";
+import { HydratedDocument, Schema as MSchema } from "mongoose";
 export type TopicSetDocument = HydratedDocument<TopicSet>;
 export declare class TopicSet {
     topic: string;
@@ -32,7 +32,7 @@ export declare class TopicSet {
     sentenceTranslation: string;
     words: Word[];
 }
-export declare const TopicSetSchema: import("mongoose").Schema<TopicSet, import("mongoose").Model<TopicSet, any, any, any, import("mongoose").Document<unknown, any, TopicSet> & TopicSet & {
+export declare const TopicSetSchema: MSchema<TopicSet, import("mongoose").Model<TopicSet, any, any, any, import("mongoose").Document<unknown, any, TopicSet> & TopicSet & {
     _id: import("mongoose").Types.ObjectId;
 }, any>, {}, {}, {}, {}, import("mongoose").DefaultSchemaOptions, TopicSet, import("mongoose").Document<unknown, {}, import("mongoose").FlatRecord<TopicSet>> & import("mongoose").FlatRecord<TopicSet> & {
     _id: import("mongoose").Types.ObjectId;
